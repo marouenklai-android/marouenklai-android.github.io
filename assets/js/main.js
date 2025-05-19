@@ -1,4 +1,5 @@
 /*===== MENU SHOW =====*/ 
+
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
@@ -10,6 +11,23 @@ const showMenu = (toggleId, navId) =>{
     }
 }
 showMenu('nav-toggle','nav-menu')
+const roles = ['Android Engineer', 'Kotlin Developer', 'Software Engineer'];
+  let index = 0;
+  const roleElement = document.getElementById('role');
+
+  function cycleRoles() {
+    roleElement.textContent = roles[index];
+    roleElement.classList.add('fade-in');
+
+    setTimeout(() => {
+      roleElement.classList.remove('fade-in');
+    }, 1500);
+
+    index = (index + 1) % roles.length;
+    setTimeout(cycleRoles, 2500);
+  }
+
+  cycleRoles();
 
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')

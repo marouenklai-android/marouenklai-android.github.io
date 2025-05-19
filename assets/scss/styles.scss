@@ -70,6 +70,14 @@ img{
 }
 
 /*===== CLASS CSS ===== */
+.fade-text {
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+.fade-in {
+  opacity: 1;
+}
 .section-title{
     position: relative;
     font-size: var(--h2-font-size);
