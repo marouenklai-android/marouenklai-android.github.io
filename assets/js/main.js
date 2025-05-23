@@ -11,7 +11,7 @@ const showMenu = (toggleId, navId) =>{
     }
 }
 showMenu('nav-toggle','nav-menu')
-const roles = ['Android Engineer', 'Kotlin Developer', 'Software Engineer'];
+const roles = ['Android Engineer', 'Kotlin Developer', 'Software Engineer','And more..'];
   let index = 0;
   const roleElement = document.getElementById('role');
 
@@ -69,7 +69,7 @@ const sr = ScrollReveal({
 //     reset: true
 });
 
-sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
+sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text, .work__text .video__container',{}); 
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
